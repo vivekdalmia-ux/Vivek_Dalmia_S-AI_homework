@@ -1,0 +1,33 @@
+Question Title -> Create a Project Folder Structure
+
+Question Link -> https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution :
+    cat create-service
+    rm create-service
+    touch create-service
+    cat > create-service << "EOF"
+    #!/bin/bash
+
+    mkdir -p service
+    mkdir -p service/controllers
+    mkdir -p service/models
+    mkdir -p service/routes
+    mkdir -p service/middleware
+
+    echo "API Service" > service/README.md
+    echo 'console.log("Server started");' > service/server.js
+    EOF
+    chmod +x create-service
+    ./create-service
+
+Approach :
+    1. First I read the file "create-service" using "cat" command
+    2. Then i found a lot of errors in it and then deleted vthat file using "rm" command
+    3. After that I created that file again freshly using "touch" command
+    4. Then using 'cat > create-service << "EOF" ' command added the right code into it and the code creates 5 folders and 2 files with respective contents in it
+    5. Then i gave the file executable permission using "chmod" command
+    6. At last I executed the command
+
+Result :
+    After the completion of the code the code creates 5 folders and 2 files with respective contents in it.
