@@ -1,0 +1,18 @@
+Question Title -> Deployment Project Permissions
+
+Question Link -> https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution :
+    chmod 700 deployment/app/*.py
+    chmod 770 deployment/datasets deployment/datasets/*.csv 
+    chmod 644 deployment/docs/OVERVIEW.md
+    chmod 755 deployment/bin/*.sh
+
+Approch :
+    First I changed the permissions of all python files in the app directory using "chmod" command then the permissions all to owner , none to group and others using "700" then using "*.py" all python files permissions were changed
+    Then I changed the permissions of all csv files in the app directory including directory so First i changed permissions of folder using its path, then using "chmod" command then the permissions all to owner and group and none to others using "770" then using "*.csv" all csv files permissions were changed
+    Then I changed the permissions of the file "OVERVIEW.md" in "docs" directory using "chmod" command and i gave number "644" which give wriiting and reading permission toh owner, reading permission to group and others.
+    Then I changed the permissions of all bash files in the app directory using "chmod" command then the permissions all to owner , reading and executing permission to group and others using "755" then using "*.sh" all bash files permissions were changed
+
+Result :
+    The permission of all python files inside "app" directory were changed, permissions of all csv files inside "datasets" directory including directory where changed, permissions of "OVERVIEW.md" inside "docs" directory were changed, and all bash files inside "bin" directory were changed.
