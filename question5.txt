@@ -1,0 +1,22 @@
+Question Title -> Execute a Python Script Directly
+
+Question Link -> https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+Solution :
+    which python3
+    touch hello.py
+    echo "#!/usr/bin/env python3" >> hello.py
+    echo 'print("Hello from Python")' >> hello.py
+    chmod +x hello.py
+    ./hello.py
+
+Approach :
+    1. First I checked the pat?h of "python3" command for shebang operator, that gave me this output "/usr/bin/python3".
+    2. Then i created a file named "hello.py"
+    3. Then I wrote the command for executing the file "#!" -> shebang operator "/usr/bin/env python3" -> path of command. wnd wrote that into "hello.py" file
+    4. Then I appended the like which should be executed
+    5. Then gave the executing permission to the file
+    6. Ran the command
+
+Result :
+    File "hello.py" was created shebang was added, instruction was given, executing permissions given and the script worked without help.
