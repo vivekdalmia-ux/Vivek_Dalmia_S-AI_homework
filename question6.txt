@@ -1,0 +1,24 @@
+Question Title -> Simplify the Compilation Process
+
+Question Link -> https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+Solution :
+    touch build.sh
+    cat > build.sh << "EOF"
+    #!/bin/bash
+    gcc hello.c -o hello
+    EOF
+    chmod +x build.sh
+    ./build.sh
+    ./hello
+
+Approach :
+    1. First I created "build.sh" file
+    2. Then using "cat" command and "EOF" added contents to the file.
+    3. Added shebang,"gcc hello.c -o hello" where hello.c is file and this line makes the file "hello.c" executable
+    4. Then came out of file using "EOF"
+    5. Then Gave executable permission to "build.sh" file
+    6. Then executed both files
+
+Result :
+    Both file executed successfully and gave output "Hello from C"
