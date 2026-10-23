@@ -1,0 +1,27 @@
+Question Title -> The Internship Project Setup
+
+Question Link -> https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution :
+    cd client-app
+    git init
+    echo "HELLO" >> index.html
+    echo "HELLO" >> app.js
+    git add "index.html" "app.js"
+    git commit -m "Initial client files"
+    git remote add origin https://github.com/startup/client-app.git
+    git push -u origin main
+    git log
+
+Approach :
+    1. First moved to "client-app" Directory
+    2. Then initialized git
+    3. Then added contents to 'index.html' and 'app.js'
+    4. Then stagged the both files
+    5. Then commited them with message "Initial client files"
+    6. Then Registerd the remote as origin
+    7. Then Pushed the folder to main
+    8. then used git log to see the commits and author of the repository
+
+Result :
+    Git was initialized, "index.html" and "app.js" were stagged and commited, and was pushed to remote repository.
