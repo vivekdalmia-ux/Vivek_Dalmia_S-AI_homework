@@ -1,0 +1,26 @@
+Question Title -> API-Service Directory Workflow
+
+Question Link -> https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+Solution :
+    cd api-service
+    git init
+    git add "README.md"
+    git commit -m "Add documentation"
+    git add "server.js" "routes.js" "package.json"
+    git commit -m "Add server files"
+    git status
+    git log
+
+Approch :
+    1. First I moved to "api-service" folder using "cd" command
+    2. Initialized git in folder using "git init" command
+    3. Then Staged the file "README.md" using 'git add "README.md"'
+    4. Then Commited file with message "Add documentation"
+    5. The Staged all 3 files together using 'git add "server.js" "routes.js" "package.json"'
+    6. Then Commited all files with message "Add server files"
+    7. Then used command "git status" to see the untracked files
+    8. Then used command "git log" to see the commit logs
+
+Result :
+    Git was Initialized, "README.md,server.js,routes.js,package.json" were staged and commited
