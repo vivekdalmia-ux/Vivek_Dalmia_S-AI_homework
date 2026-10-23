@@ -1,0 +1,14 @@
+Question Title -> The Missing Project Credentials
+
+Question Link -> https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+Solution :
+    grep -r "DB_PASSWORD" .
+    cat EventApp/config/.env > EventApp/db_password.txt
+
+Approach :
+    1. First I used "grep" command along with "-r" option and then the patter "DB_PASSWORD"
+    2. After this i got the path where the 'DB_PASSWORD' is kept and then using "cat" along with that file name I printed that in "db_password.txt" file
+
+Result :
+    The password was copied to "db_password.txt" file.
